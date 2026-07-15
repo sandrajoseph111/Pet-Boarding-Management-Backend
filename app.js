@@ -47,6 +47,12 @@ app.post("/Pet-add", async (req,res)=>{
 })
 
 
+app.post("/view-Pet", async (req,res)=>{
+    const logs=await Pet.find()
+    res.json(logs)
+})
+
+
 
 
 
